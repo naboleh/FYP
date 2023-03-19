@@ -11,6 +11,7 @@ import {
   Animated,
   Image,
 } from 'react-native';
+import Page4Gif from '../backgrounds/p4BG.gif';
 
 import styles from '../components/styles';
 
@@ -45,7 +46,7 @@ export default Page4E = ({navigation}) => {
     return (
     <View style={styles.container}>
       <FadeInView>
-        <ImageBackground source={require('../backgrounds/p4BG.gif')} style={styles.landingBG}>
+        <ImageBackground source={Page4Gif} style={styles.landingBG}>
           <Text style={styles.P4text}>
           In an attempt to stop the swordfishes from attacking inland, the King then instructed his people to line up along the coast to form a barrier between the ocean and the land. However, the King’s plan failed as even more people got injured from being stabbed by the swordfishes. This made the King angrier.          </Text>
           <View style={styles.nextBtnContainer}>

@@ -11,6 +11,7 @@ import {
   Animated,
   Image,
 } from 'react-native';
+import Page2Gif from '../backgrounds/p2BG.gif';
 
 import styles from '../components/styles';
 
@@ -45,7 +46,7 @@ export default Page2E = ({navigation}) => {
     return (
     <View style={styles.container}>
       <FadeInView>
-        <ImageBackground source={require('../backgrounds/p2BG.gif')} style={styles.landingBG}>
+        <ImageBackground source={Page2Gif} style={styles.landingBG}>
           <Text style={styles.P2text}>
           However one day, out of the blue, hundreds of swordfishes started jumping onto shore and stab many of the villagers that were on the beach.
           </Text>
