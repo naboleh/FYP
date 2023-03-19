@@ -11,7 +11,7 @@ import {
   Animated,
   Image,
 } from 'react-native';
-
+import Page8Gif from '../backgrounds/p8BG.gif';
 import styles from '../components/styles';
 
 /*fade in to landing page when loading*/
@@ -45,7 +45,7 @@ export default Page8E = ({navigation}) => {
     return (
     <View style={styles.container}>
       <FadeInView>
-        <ImageBackground source={require('../backgrounds/p8BG.gif')} style={styles.landingBG}>
+        <ImageBackground source={Page8Gif} style={styles.landingBG}>
           <Text style={styles.P8text}>
           The people started celebrating with joy. At last Singapore has been saved from the attack of the swordfishes. The King praised Hang Nadim for his brilliance and invited him to the palace to receive an award as a token of appreciation.
           </Text>          

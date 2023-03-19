@@ -12,7 +12,6 @@ import {
   Image,
 } from 'react-native';
 import Page4Gif from '../backgrounds/p4BG.gif';
-
 import styles from '../components/styles';
 
 /*fade in to landing page when loading*/

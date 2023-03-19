@@ -11,7 +11,7 @@ import {
   Animated,
   Image,
 } from 'react-native';
-
+import Page5Gif from '../backgrounds/p5BG.gif';
 import styles from '../components/styles';
 
 /*fade in to landing page when loading*/
@@ -45,7 +45,7 @@ export default Page5E = ({navigation}) => {
     return (
     <View style={styles.container}>
       <FadeInView>
-        <ImageBackground source={require('../backgrounds/p5BG.gif')} style={styles.landingBG}>
+        <ImageBackground source={Page5Gif} style={styles.landingBG}>
           <Text style={styles.P5text}>
           However a bright young boy named Hang Nadim came forward to give the King a suggestion. He suggested that it would be wise to line a row of chopped down banana trees along the coast to build a barrier instead.          </Text>
           <View style={styles.nextBtnContainer}>

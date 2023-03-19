@@ -12,7 +12,6 @@ import {
   Image,
 } from 'react-native';
 import Page3Gif from '../backgrounds/p3BG.gif';
-
 import styles from '../components/styles';
 
 /*fade in to landing page when loading*/

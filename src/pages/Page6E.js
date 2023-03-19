@@ -11,7 +11,7 @@ import {
   Animated,
   Image,
 } from 'react-native';
-
+import Page6Gif from '../backgrounds/p6BG.gif';
 import styles from '../components/styles';
 
 /*fade in to landing page when loading*/
@@ -45,7 +45,7 @@ export default Page6E = ({navigation}) => {
     return (
     <View style={styles.container}>
       <FadeInView>
-        <ImageBackground source={require('../backgrounds/p6BG.gif')} style={styles.landingBG}>
+        <ImageBackground source={Page6Gif} style={styles.landingBG}>
           <Text style={styles.P6text}>
           When the King heard that suggestion, he immediately instructed people to cut down banana trees and asked them to line them up along the coast. Within hours, a row of chopped banana trees can be seen lined along the shoreline.          
           </Text>

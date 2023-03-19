@@ -11,7 +11,7 @@ import {
   Animated,
   Image,
 } from 'react-native';
-
+import Page7Gif from '../backgrounds/p7BG.gif';
 import styles from '../components/styles';
 
 /*fade in to landing page when loading*/
@@ -45,7 +45,7 @@ export default Page7E = ({navigation}) => {
     return (
     <View style={styles.container}>
       <FadeInView>
-        <ImageBackground source={require('../backgrounds/p7BG.gif')} style={styles.landingBG}>
+        <ImageBackground source={Page7Gif} style={styles.landingBG}>
           <Text style={styles.P7text}>
           One after another, the swordfishes started getting stuck to the banana tree and eventually, the attacks stopped.          
           </Text>
