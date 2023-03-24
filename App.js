@@ -2,7 +2,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-// import {SafeAreaView,StatusBar} from 'react-native';
 
 import LandingPage from './src/pages/LandingPage';
 import Page1E from './src/pages/Page1E';
@@ -83,19 +82,3 @@ function App() {
 }
 
 export default App;
-
-//  const App: () => Node = () => {
-//    return (
-//     <>
-//     <StatusBar barStyle="dark-content" />
-//       <SafeAreaView>
-//         {/* <LandingPage/> */}
-//         {/* <Page1E/> */}
-//         <Page2E/>
-//       </SafeAreaView>
-//     </>
-//    );
-//  };
- 
- 
-//  export default App; 
