@@ -1,7 +1,7 @@
 /*
 Page 13M
 */
-import React, {useRef} from 'react';
+import React, {useRef,useEffect} from 'react';
 import {
   ImageBackground,
   View,
@@ -11,8 +11,8 @@ import {
   Animated,
   Image,
 } from 'react-native';
-
 import styles from '../components/styles';
+import Sound from 'react-native-sound';
 
 /*fade in to landing page when loading*/
 const FadeInView = (props) => {
@@ -41,7 +41,38 @@ const FadeInView = (props) => {
     );
   }
 
+//Audio Component//
+
+Sound.setCategory('Playback');
+var read = new Sound('p13m.m4a', Sound.MAIN_BUNDLE, (error) => {
+  if (error) {
+    console.log('failed to load the sound', error);
+    return;
+  }
+  // when loaded successfully
+  console.log('loaded successfully');
+});
+
+///////////////////
+
+
 export default Page13E = ({navigation}) => {
+  useEffect(() => {
+    read.setVolume(1);
+    return () => {
+      read.release();
+    };
+  }, []);
+
+  const playPause = () => {
+    read.play(success => {
+      if (success) {
+        console.log('successfully finished playing');
+      } else {
+        console.log('playback failed due to audio decoding errors');
+      }
+    });
+  };
     return (
     <View style={styles.container}>
       <FadeInView>
@@ -49,6 +80,14 @@ export default Page13E = ({navigation}) => {
           <Text style={styles.P13text}>
           Hang Nadim menjerit kesakitan apabila ditikam oleh sebilah keris lalu  beliau dicampakkan ke dalam laut dan dibiarkan mati lemas.         
           </Text>
+          <View>
+          <TouchableOpacity style={styles.AudioBtnP13E} 
+            onPress={playPause}>
+              <Text style={styles.AudioText}>
+              Baca
+              </Text>
+          </TouchableOpacity>
+          </View>
           <View style={styles.nextBtnContainer}>
           <TouchableOpacity style={styles.nextBtn13M} 
             onPress={() => navigation.navigate('Page14M')}>

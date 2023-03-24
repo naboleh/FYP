@@ -1,7 +1,7 @@
 /*
 Page 4M
 */
-import React, {useRef} from 'react';
+import React, {useRef,useEffect} from 'react';
 import {
   ImageBackground,
   View,
@@ -11,8 +11,8 @@ import {
   Animated,
   Image,
 } from 'react-native';
-
 import styles from '../components/styles';
+import Sound from 'react-native-sound';
 
 /*fade in to landing page when loading*/
 const FadeInView = (props) => {
@@ -41,13 +41,53 @@ const FadeInView = (props) => {
     );
   }
 
+//Audio Component//
+
+Sound.setCategory('Playback');
+var read = new Sound('p4m.m4a', Sound.MAIN_BUNDLE, (error) => {
+  if (error) {
+    console.log('failed to load the sound', error);
+    return;
+  }
+  // when loaded successfully
+  console.log('loaded successfully');
+});
+
+///////////////////
+
 export default Page4M = ({navigation}) => {
+  useEffect(() => {
+    read.setVolume(1);
+    return () => {
+      read.release();
+    };
+  }, []);
+
+  const playPause = () => {
+    read.play(success => {
+      if (success) {
+        console.log('successfully finished playing');
+      } else {
+        console.log('playback failed due to audio decoding errors');
+      }
+    });
+  };
+
     return (
     <View style={styles.container}>
       <FadeInView>
         <ImageBackground source={require('../backgrounds/p4BG.gif')} style={styles.landingBG}>
           <Text style={styles.P4text}>
-          Maka Raja Singapura mengarahkan orang untuk berbaris di pantai, untuk membuat pendinding dari serangan ikan todak. Namun usahanya gagal dan semakin ramai lagi rakyat mati ditikam oleh ikan todak. Keadaan ini membuatkan Raja Singapura bertambah marah.          </Text>
+          Maka Raja Singapura mengarahkan orang untuk berbaris di pantai, untuk membuat pendinding dari serangan ikan todak. Namun usahanya gagal dan semakin ramai lagi rakyat mati ditikam oleh ikan todak. Keadaan ini membuatkan Raja Singapura bertambah marah.          
+          </Text>
+          <View>
+          <TouchableOpacity style={styles.AudioBtnP4E} 
+            onPress={playPause}>
+              <Text style={styles.AudioText}>
+              Baca
+              </Text>
+          </TouchableOpacity>
+          </View>
           <View style={styles.nextBtnContainer}>
           <TouchableOpacity style={styles.nextBtn4} 
             onPress={() => navigation.navigate('Page5M')}>

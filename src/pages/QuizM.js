@@ -239,7 +239,7 @@ const QuizM = ({navigation}) => {
                            padding: 20,
                            alignItems: 'center'
                        }}>
-                           <Text style={{fontSize: 30, fontWeight: 'bold'}}>{ score> (allQuestions.length/2) ? 'Congratulations!' : 'Oops!' }</Text>
+                           <Text style={{fontSize: 30, fontWeight: 'bold'}}>{ score> (allQuestions.length/2) ? 'Tahniah!' : 'Oops!' }</Text>
                             
                            <View style={{
                                flexDirection: 'row',

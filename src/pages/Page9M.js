@@ -1,7 +1,7 @@
 /*
 Page 9M
 */
-import React, {useRef} from 'react';
+import React, {useRef,useEffect} from 'react';
 import {
   ImageBackground,
   View,
@@ -11,8 +11,8 @@ import {
   Animated,
   Image,
 } from 'react-native';
-
 import styles from '../components/styles';
+import Sound from 'react-native-sound';
 
 /*fade in to landing page when loading*/
 const FadeInView = (props) => {
@@ -41,14 +41,53 @@ const FadeInView = (props) => {
     );
   }
 
+//Audio Component//
+
+Sound.setCategory('Playback');
+var read = new Sound('p9m.m4a', Sound.MAIN_BUNDLE, (error) => {
+  if (error) {
+    console.log('failed to load the sound', error);
+    return;
+  }
+  // when loaded successfully
+  console.log('loaded successfully');
+});
+
+///////////////////
+
 export default Page9E = ({navigation}) => {
+  useEffect(() => {
+    read.setVolume(1);
+    return () => {
+      read.release();
+    };
+  }, []);
+
+  const playPause = () => {
+    read.play(success => {
+      if (success) {
+        console.log('successfully finished playing');
+      } else {
+        console.log('playback failed due to audio decoding errors');
+      }
+    });
+  };
+
     return (
     <View style={styles.container}>
       <FadeInView>
         <ImageBackground source={require('../backgrounds/p9BG.png')} style={styles.landingBG}>
           <Text style={styles.P9text}>
           Pada masa yang sama, para pembesar Singapura berasa sangat iri hati dan dengki dengan kecerdasan Hang Nadim. Mereka risau Hang Nadim akan mengambil tempat mereka sebagai penasihat di-Raja dan beliau akan menjadi lebih berpengaruh dan berkuasa berbanding mereka.
-          </Text>          
+          </Text> 
+          <View>
+          <TouchableOpacity style={styles.AudioBtnP9E} 
+            onPress={playPause}>
+              <Text style={styles.AudioText}>
+              Baca
+              </Text>
+          </TouchableOpacity>
+          </View>         
           <View style={styles.nextBtnContainer}>
           <TouchableOpacity style={styles.nextBtn9M} 
             onPress={() => navigation.navigate('Page10M')}>

@@ -1,7 +1,7 @@
 export default data = [
     {
         question: "Binatang apa yang menyerang Singapura?", 
-        options: ["Singa","Ikan U","Naga","Ikan todak"],
+        options: ["Singa","Ikan yu","Naga","Ikan todak"],
         correct_option: "Ikan todak"
     },
     {

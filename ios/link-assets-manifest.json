@@ -1,0 +1,129 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/audios/p10E.m4a",
+      "sha1": "6adf960259503dd2a1f1af0dc441d42f0b6f9507"
+    },
+    {
+      "path": "src/assets/audios/p11E.m4a",
+      "sha1": "eb26447cddb85e1847e2a7c5c8c0b7830d0bf69f"
+    },
+    {
+      "path": "src/assets/audios/p12E.m4a",
+      "sha1": "81f52d7e8b36b919a8071ffb95e366494f7051dd"
+    },
+    {
+      "path": "src/assets/audios/p13E.m4a",
+      "sha1": "0cc5f488c926998513535ce34d81c169e5584d8c"
+    },
+    {
+      "path": "src/assets/audios/p14E.m4a",
+      "sha1": "2c09ad1f3877424e48ff6f9329e4b053c6967fde"
+    },
+    {
+      "path": "src/assets/audios/p1e.m4a",
+      "sha1": "45f9b99d5b61fadf15b410c65a6ad59cc6dae415"
+    },
+    {
+      "path": "src/assets/audios/p2e.m4a",
+      "sha1": "dde559583d8865fa06725369ac5f248fe318b441"
+    },
+    {
+      "path": "src/assets/audios/p3e.m4a",
+      "sha1": "7d270a0dd7b4aa3a3b648da5964e4cd18eed8a3d"
+    },
+    {
+      "path": "src/assets/audios/p4E.m4a",
+      "sha1": "ff00835ad1f320f49ef5f4005a69899910f1a8c4"
+    },
+    {
+      "path": "src/assets/audios/p5E.m4a",
+      "sha1": "339b98782a95409dcb69fff439cafb50e1315376"
+    },
+    {
+      "path": "src/assets/audios/p6E.m4a",
+      "sha1": "3b03114d40897a6e30233cea49763ed5b6a5bc56"
+    },
+    {
+      "path": "src/assets/audios/p7E.m4a",
+      "sha1": "cb424f022d06a3063aa9082e43bdcc1a7d24bc25"
+    },
+    {
+      "path": "src/assets/audios/p8E.m4a",
+      "sha1": "69a35c9cc30ac02b4a66be13a527154bfca4f10b"
+    },
+    {
+      "path": "src/assets/audios/p9E.m4a",
+      "sha1": "98c435891ed24dfc461e4448bbcab6ca002e5c76"
+    },
+    {
+      "path": "src/fonts/Quicksand-Bold.ttf",
+      "sha1": "171c939980530054b184f11a16f4d8a16f4530b3"
+    },
+    {
+      "path": "src/fonts/Quicksand-Light.ttf",
+      "sha1": "ad8c5438bbea3c7e8c9f79e8d3e6a21e87212df4"
+    },
+    {
+      "path": "src/fonts/Quicksand-Medium.ttf",
+      "sha1": "a9e8a61db39bc1705da9724e7bff29eb4ea2f150"
+    },
+    {
+      "path": "src/fonts/Quicksand-Regular.ttf",
+      "sha1": "e6e740cad5285410556e1dbfddabd325f57222f4"
+    },
+    {
+      "path": "src/fonts/Quicksand-SemiBold.ttf",
+      "sha1": "42acaf8cf0b677cbb787ba75b4f8f3bb3ba72a0c"
+    },
+    {
+      "path": "src/fonts/Roboto-Black.ttf",
+      "sha1": "e28654c12713143bfdd72f8c559c48a19c1cbf18"
+    },
+    {
+      "path": "src/fonts/Roboto-BlackItalic.ttf",
+      "sha1": "91158ed880ebf4bb904568ec246e85a07fefcdfb"
+    },
+    {
+      "path": "src/fonts/Roboto-Bold.ttf",
+      "sha1": "013f1bbcbbd80991a5f00fca52a90d0d7ab8b81f"
+    },
+    {
+      "path": "src/fonts/Roboto-BoldItalic.ttf",
+      "sha1": "41985122ae0d78676ac1eb30edde89606bdbe531"
+    },
+    {
+      "path": "src/fonts/Roboto-Italic.ttf",
+      "sha1": "20420db4e13d654cbe22b5fba6296c78a6360537"
+    },
+    {
+      "path": "src/fonts/Roboto-Light.ttf",
+      "sha1": "51dbae4543aaa10096e344e48fcffe468bd314a9"
+    },
+    {
+      "path": "src/fonts/Roboto-LightItalic.ttf",
+      "sha1": "538f6b977a7109f14cf314b8bad18ed84519d995"
+    },
+    {
+      "path": "src/fonts/Roboto-Medium.ttf",
+      "sha1": "fddc8b1c688ef3baed0d5a46abf5f01f0edaf02b"
+    },
+    {
+      "path": "src/fonts/Roboto-MediumItalic.ttf",
+      "sha1": "b13559734aa602f9a1bddb8b5be72d7036858716"
+    },
+    {
+      "path": "src/fonts/Roboto-Regular.ttf",
+      "sha1": "84d102488738b0ebbc7a5087973effbd54c95bd5"
+    },
+    {
+      "path": "src/fonts/Roboto-Thin.ttf",
+      "sha1": "e07c400b55ef4ac7fb5ff9a79d301712922c681b"
+    },
+    {
+      "path": "src/fonts/Roboto-ThinItalic.ttf",
+      "sha1": "4c80f7c044a7e9a83865f625559e114ea4d7d2b1"
+    }
+  ]
+}
