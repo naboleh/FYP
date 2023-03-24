@@ -78,7 +78,7 @@ export default Page13E = ({navigation}) => {
       <FadeInView>
         <ImageBackground source={require('../backgrounds/p13BG.gif')} style={styles.landingBG}>
           <Text style={styles.P13text}>
-          Hang Nadim menjerit kesakitan apabila ditikam oleh sebilah keris lalu  beliau dicampakkan ke dalam laut dan dibiarkan mati lemas.         
+          Hang Nadim menjerit kesakitan apabila ditikam oleh sebilah keris lalu beliau dicampakkan ke dalam laut dan dibiarkan mati lemas.         
           </Text>
           <View>
           <TouchableOpacity style={styles.AudioBtnP13E} 
