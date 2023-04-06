@@ -81,7 +81,7 @@ export default Page3M = ({navigation}) => {
           Peristiwa itu memeranjatkan Raja Singapura kerana ramai telah terbunuh. Baginda pun menaiki gajah dan menuju ke pantai untuk melihat sendiri tragedi yang telah menimpa negeri itu. Pantai permai putih yang indah kini bertempiaran dengan mayat dan darah-darah rakyat. Baginda telah mula berasa amat sedih.
           </Text>
           <View>
-          <TouchableOpacity style={styles.AudioBtnP3M} 
+          <TouchableOpacity style={styles.AudioBtnP3} 
             onPress={playPause}>
               <Text style={styles.AudioText}>
               Baca

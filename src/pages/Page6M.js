@@ -81,7 +81,7 @@ export default Page6E = ({navigation}) => {
           Mendengarkan cadangan Hang Nadim, baginda mengarahkan orang yang ada di situ untuk terus menebang batang pisang untuk dijadikan kubu. Beberapa jam kemudian kubu batang pisang dipacak sepanjang pantai.           
           </Text>
           <View>
-          <TouchableOpacity style={styles.AudioBtnP6E} 
+          <TouchableOpacity style={styles.AudioBtnP6M} 
             onPress={playPause}>
               <Text style={styles.AudioText}>
               Baca
@@ -89,7 +89,7 @@ export default Page6E = ({navigation}) => {
           </TouchableOpacity>
           </View>
           <View style={styles.nextBtnContainer}>
-          <TouchableOpacity style={styles.nextBtn6} 
+          <TouchableOpacity style={styles.nextBtn6M} 
             onPress={() => navigation.navigate('Page7M')}>
               <Text style={styles.btnText}>
               {">"}

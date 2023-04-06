@@ -81,7 +81,7 @@ export default Page3E = ({navigation}) => {
           That incident shocked the King as it caused many injuries. The King then went down to the beach to see the tragedy for himself. When the King arrived at the beach, the sight of his people hurt as a result of the incident made him feel very sorrowful.
           </Text>
           <View>
-          <TouchableOpacity style={styles.AudioBtnP3E} 
+          <TouchableOpacity style={styles.AudioBtnP3} 
             onPress={playPause}>
               <Text style={styles.AudioText}>
               Read

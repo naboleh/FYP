@@ -42,7 +42,6 @@ const FadeInView = (props) => {
   }
 
 //Audio Component//
-
 Sound.setCategory('Playback');
 var read = new Sound('p1e.m4a', Sound.MAIN_BUNDLE, (error) => {
   if (error) {
@@ -52,7 +51,6 @@ var read = new Sound('p1e.m4a', Sound.MAIN_BUNDLE, (error) => {
   // when loaded successfully
   console.log('loaded successfully');
 });
-
 ///////////////////
 
 export default function Page1E ({navigation}) {
@@ -101,24 +99,3 @@ export default function Page1E ({navigation}) {
     </View>
     );
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -77,7 +77,7 @@ export default Page9E = ({navigation}) => {
     <View style={styles.container}>
       <FadeInView>
         <ImageBackground source={require('../backgrounds/p9BG.png')} style={styles.landingBG}>
-          <Text style={styles.P9text}>
+          <Text style={styles.P9Mtext}>
           Pada masa yang sama, para pembesar Singapura berasa sangat iri hati dan dengki dengan kecerdasan Hang Nadim. Mereka risau Hang Nadim akan mengambil tempat mereka sebagai penasihat di-Raja dan beliau akan menjadi lebih berpengaruh dan berkuasa berbanding mereka.
           </Text> 
           <View>

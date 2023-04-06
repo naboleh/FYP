@@ -77,7 +77,7 @@ export default Page4M = ({navigation}) => {
     <View style={styles.container}>
       <FadeInView>
         <ImageBackground source={require('../backgrounds/p4BG.gif')} style={styles.landingBG}>
-          <Text style={styles.P4text}>
+          <Text style={styles.P4textM}>
           Maka Raja Singapura mengarahkan orang untuk berbaris di pantai, untuk membuat pendinding dari serangan ikan todak. Namun usahanya gagal dan semakin ramai lagi rakyat mati ditikam oleh ikan todak. Keadaan ini membuatkan Raja Singapura bertambah marah.          
           </Text>
           <View>

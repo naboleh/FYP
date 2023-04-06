@@ -78,11 +78,11 @@ export default Page7E = ({navigation}) => {
     <View style={styles.container}>
       <FadeInView>
         <ImageBackground source={require('../backgrounds/p7BG.gif')} style={styles.landingBG}>
-          <Text style={styles.P7Mtext}>
+          <Text style={styles.P7text}>
           Tidak lama kemudian kebanyakan ikan todak telah menyerang semula, maka muncung ikan todak akan tercucuk pada batang pisang itu dan tidak dapat bergerak.         
           </Text>
           <View>
-          <TouchableOpacity style={styles.AudioBtnP7E} 
+          <TouchableOpacity style={styles.AudioBtnP7M} 
             onPress={playPause}>
               <Text style={styles.AudioText}>
               Baca

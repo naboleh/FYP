@@ -77,7 +77,7 @@ export default Page8E = ({navigation}) => {
     <View style={styles.container}>
       <FadeInView>
         <ImageBackground source={require('../backgrounds/p8BG.gif')} style={styles.landingBG}>
-          <Text style={styles.P8Mtext}>
+          <Text style={styles.P8text}>
           Rakyat Singapura disambut dengan penuh kegembiraan. Akhirnya, Singapura selamat dari serangan ikan todak. Baginda memuji-muji akan kecerdikan Hang Nadim. Lalu baginda menjemput Hang Nadim ke istana untuk kurniakan hadiah penganugerahan.
           </Text>
           <View>
